@@ -5,7 +5,6 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
-        "yicitool/tool": "^0.1"
     },
     "autoload": {
         "psr-4": {
