@@ -1,0 +1,15 @@
+{
+    "name": "yicitool/tool",
+    "description": "\"\"",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "topthink/think-template": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "yicitool\\tool\\": "src"
+        }
+    }
+}
