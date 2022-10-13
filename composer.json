@@ -1,0 +1,11 @@
+{
+    "name": "yici-mr/yctool",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "yctool\\": "src"
+        }
+    }
+}
