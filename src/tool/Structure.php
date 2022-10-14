@@ -6,10 +6,13 @@ namespace yctool\tool;
 
 class Structure
 {
+    /**方便处理
+     * @param string $classname  app/TableStructure下的类名。
+     * @param array $data       操作表的数据
+     * */
     public static function Get_Structure(string $classname,array $data): array
     {
         $arr = [];
-        //TableStructure 是存放表字段，定义前端id的类。
         $new_obj = '\\app\\TableStructure\\'.$classname;
         $obj_arr = (array)new $new_obj;
         foreach ($data as $k => $v){

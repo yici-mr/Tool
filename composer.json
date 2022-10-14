@@ -2,7 +2,8 @@
     "name": "yici-mr/yctool",
     "type": "library",
     "license": "MIT",
-    "require": {},
+    "require": {
+    },
     "autoload": {
         "psr-4": {
             "yctool\\": "src"
