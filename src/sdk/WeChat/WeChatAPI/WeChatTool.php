@@ -7,14 +7,9 @@ class WeChatTool
 {
 
     public static $config ;
-    /**
-     * @param  string $name  小程序填入applet，公众号填入accounts
-     **/
-    public static function config(string $name):self
+    public function __construct($config)
     {
-        $config = include_once (__DIR__."/../config.php");
-        self::$config = $config[$name];
-        return new self();
+        self::$config = $config;
     }
     /**
      * 可以获得sessionKey和openid
