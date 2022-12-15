@@ -23,10 +23,10 @@ class Request
 
     /**
      * @param string $url 发送post请求的链接
-     * @param array  $post_data 发生post的数据
+     * @param array|string  $post_data 发送post的数据
      * @param array  $header 设置头如： ['Accept:application/json'];
      **/
-    public static function curl_post(string $url,array $post_data,array $header=[]):array
+    public static function curl_post(string $url,$post_data,array $header=[]):array
     {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -38,6 +38,6 @@ class Request
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         $output = curl_exec($ch);
         curl_close($ch);
-        return $output;
+        return json_decode($output,true);
     }
 }
